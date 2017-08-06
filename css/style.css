@@ -1,0 +1,66 @@
+div {
+    padding: 0;
+    margin: 0;
+}
+.side-bar{
+    background-color: #457;
+    height: 617px;
+    padding: 0;
+
+}
+header {
+    width: 100%;
+    height: 40px;
+    background: #654;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+}
+.butt {
+    
+    background-color: #654;
+    width: 40px;
+    height: 60%;
+    float: left;
+    
+}
+.top {
+     margin-top: 4px;
+    margin-left: 3px;
+    width: 80%;
+    height: 20%;
+    background-color: #387;
+   
+}
+@media screen and (min-width: 768px) {
+    .side-bar{
+        display: block;
+    }
+    .butt {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .side-bar {
+        display: none;
+    }
+    butt {
+        display: block;
+    }
+}
+.map{
+
+height:617px;
+padding: 0;
+}
+
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+li{
+    color: white;
+    font-size: 1.5em;
+}
