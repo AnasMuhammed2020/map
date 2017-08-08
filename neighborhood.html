@@ -1,41 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title></title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link href="css/style.css" rel="stylesheet">
-    </head>
-    <body>
-    
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
     <header id="topbar">
-         <div class="butt" data-bind="click: change()">
+        <div class="butt" data-bind="click: change()">
             <div class="top"></div>
             <div class="top"></div>
             <div class="top"></div>
         </div>
-        <p>using foursquare API</p> 
-   </header>
-    
+        <p>using foursquare API</p>
+    </header>
+
     <div class="row">
         <div class="col-sm-2 side-bar " data-bind="style: { 'display': current() ? 'block' : 'none' }">
-                <div>
-            <input data-bind="textInput: search" type="text" id="search">
-                </div>
-        <div calss="places">
-             <ul data-bind="foreach: marksearch">
-                <li data-bind="text: name, click: $parent.showInfo"></li>
-            </ul>
-        </div>
+            <div>
+                <input data-bind="textInput: search" type="text" id="search">
+            </div>
+            <div calss="places">
+                <ul data-bind="foreach: marksearch">
+                    <li data-bind="text: name, click: $parent.showInfo"></li>
+                </ul>
+            </div>
         </div>
         <div class="col-sm-10 map" id="map"></div>
     </div>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/knockout-3.4.2.js"></script>
-   <script src="js/script.js"></script>
-    <script async defer onerror="mapError()"
-       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW27Lyj1FMkyAbsxOd03Uk5jhG65LJ89c&v=3&callback=initMap">
-</script>
-    </body>
+    <script src="js/script.js"></script>
+    <script async defer onerror="mapError()" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDW27Lyj1FMkyAbsxOd03Uk5jhG65LJ89c&v=3&callback=initMap">
+    </script>
+</body>
+
 </html>

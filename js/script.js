@@ -79,7 +79,7 @@ var viewModel = function () {
     this.search.subscribe(function () {
         self.filterList();
     });
-    this.showInfo = function(Item) {
+    this.showInfo = function (Item) {
         popinfo(self.marklist1[Item.id]);
     };
 
